@@ -4,7 +4,7 @@
       "id": "1",
       "firstname": "John",
       "lastname": "Doe",
-      "group": "React N34"
+      "group": "React N35"
     },
     {
       "id": "2",
@@ -78,8 +78,8 @@
       "id": "1",
       "firstname": "John",
       "lastname": "Doe",
-      "group": "React N34",
-      "level": "Middle"
+      "group": "React N35",
+      "level": "Junior"
     },
     {
       "id": "2",
@@ -110,11 +110,18 @@
       "level": "Junior"
     },
     {
-      "id": "e77a",
+      "id": "6d65",
       "firstname": "Alex",
-      "lastname": "Brown",
+      "lastname": "White",
       "group": "React N35",
       "level": "Middle"
+    },
+    {
+      "id": "398d",
+      "firstname": "Henri",
+      "lastname": "Brown",
+      "group": "React N34",
+      "level": "Senior"
     }
   ]
 }

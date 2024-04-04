@@ -33,6 +33,7 @@ const SearchComp = ({ addOpenModal, setFiltered, data }) => {
         display: "flex",
         justifyContent: "flex-end",
         gap: "20px",
+        marginTop: 30
       }}
     >
       <Search

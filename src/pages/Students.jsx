@@ -61,7 +61,6 @@ const Students = () => {
       </Title>
       <SearchComp
         addOpenModal={addOpenModal}
-        // dataAll={dataAll}
         data={data}
         setFiltered={setFiltered}
       />
