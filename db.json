@@ -1,102 +1,120 @@
 {
-    "students": [
-      {
-        "id": "1",
-        "firstname": "John",
-        "lastname": "Doe",
-        "group": "React N34"
-      },
-      {
-        "id": "2",
-        "firstname": "Tom",
-        "lastname": "Smith",
-        "group": "React N34"
-      },
-      {
-        "id": "3",
-        "firstname": "John",
-        "lastname": "Smith",
-        "group": "React N45"
-      },
-      {
-        "id": "4",
-        "firstname": "John",
-        "lastname": "White",
-        "group": "React N45"
-      },
-      {
-        "id": "5",
-        "firstname": "Tom",
-        "lastname": "Smith",
-        "group": "React N34"
-      },
-      {
-        "id": "6",
-        "firstname": "John",
-        "lastname": "Smith",
-        "group": "React N45"
-      },
-      {
-        "id": "7",
-        "firstname": "John",
-        "lastname": "White",
-        "group": "React N34"
-      },
-      {
-        "id": "a563",
-        "firstname": "Zufarbek",
-        "lastname": "Yoldashev",
-        "group": "React N45"
-      },
-      {
-        "id": "b5b0",
-        "firstname": "Zufarbek",
-        "lastname": "Yoldashev",
-        "group": "React N35"
-      }
-    ],
-    "teachers": [
-      {
-        "id": "1",
-        "firstname": "John",
-        "lastname": "Doe",
-        "group": "React N34",
-        "level": "Middle"
-      },
-      {
-        "id": "2",
-        "firstname": "Tom",
-        "lastname": "Smith",
-        "group": "React N34",
-        "level": "Senior"
-      },
-      {
-        "id": "3",
-        "firstname": "John",
-        "lastname": "Smith",
-        "group": "React N45",
-        "level": "Middle"
-      },
-      {
-        "id": "4",
-        "firstname": "John",
-        "lastname": "White",
-        "group": "React N34",
-        "level": "Junior"
-      },
-      {
-        "id": "4799",
-        "firstname": "Zufarbek",
-        "lastname": "Yoldashev",
-        "group": "React N45",
-        "level": "Junior"
-      },
-      {
-        "id": "e77a",
-        "firstname": "Alex",
-        "lastname": "Brown",
-        "group": "React N35",
-        "level": "Middle"
-      }
-    ]
-  }
+  "students": [
+    {
+      "id": "1",
+      "firstname": "John",
+      "lastname": "Doe",
+      "group": "React N34"
+    },
+    {
+      "id": "2",
+      "firstname": "Tom",
+      "lastname": "Smith",
+      "group": "React N34"
+    },
+    {
+      "id": "3",
+      "firstname": "John",
+      "lastname": "Smith",
+      "group": "React N45"
+    },
+    {
+      "id": "4",
+      "firstname": "John",
+      "lastname": "White",
+      "group": "React N45"
+    },
+    {
+      "id": "5",
+      "firstname": "Tom",
+      "lastname": "Smith",
+      "group": "React N34"
+    },
+    {
+      "id": "6",
+      "firstname": "John",
+      "lastname": "Smith",
+      "group": "React N45"
+    },
+    {
+      "id": "7",
+      "firstname": "Alex",
+      "lastname": "White",
+      "group": "React N34"
+    },
+    {
+      "id": "a563",
+      "firstname": "Zufarbek",
+      "lastname": "Yoldashev",
+      "group": "React N45"
+    },
+    {
+      "id": "b5b0",
+      "firstname": "Bob",
+      "lastname": "White",
+      "group": "React N34"
+    },
+    {
+      "id": "1c65",
+      "firstname": "Zufarbek",
+      "lastname": "Yoldashev",
+      "group": "React N45"
+    },
+    {
+      "id": "c868",
+      "firstname": "Alex",
+      "lastname": "Green",
+      "group": "React N34"
+    },
+    {
+      "id": "deaf",
+      "firstname": "Jack",
+      "lastname": "Stovn",
+      "group": "React N35"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "firstname": "John",
+      "lastname": "Doe",
+      "group": "React N34",
+      "level": "Middle"
+    },
+    {
+      "id": "2",
+      "firstname": "Tom",
+      "lastname": "Smith",
+      "group": "React N34",
+      "level": "Senior"
+    },
+    {
+      "id": "3",
+      "firstname": "John",
+      "lastname": "Smith",
+      "group": "React N45",
+      "level": "Middle"
+    },
+    {
+      "id": "4",
+      "firstname": "John",
+      "lastname": "White",
+      "group": "React N34",
+      "level": "Junior"
+    },
+    {
+      "id": "4799",
+      "firstname": "Zufarbek",
+      "lastname": "Yoldashev",
+      "group": "React N45",
+      "level": "Junior"
+    },
+    {
+      "id": "e77a",
+      "firstname": "Alex",
+      "lastname": "Brown",
+      "group": "React N35",
+      "level": "Middle"
+    }
+  ]
+}

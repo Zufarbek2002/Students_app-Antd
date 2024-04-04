@@ -1,16 +1,19 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
-} from '@ant-design/icons';
-import { Layout, Menu, Button, theme } from 'antd';
-import Home from '../pages/Home';
-const { Header, Sider, Content } = Layout;
+} from "@ant-design/icons";
+import { Layout, Menu, Button, theme } from "antd";
+import { useNavigate } from "react-router-dom";
+import { Content } from "antd/es/layout/layout";
+import Contents from "./Contents";
+const { Header, Sider } = Layout;
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -22,27 +25,39 @@ const Sidebar = () => {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={['1']}
+          // defaultSelectedKeys={['/']}
+          onClick={({ key }) => {
+            if (key == "logout") {
+              navigate('/login')
+            } else {
+              navigate(key);
+            }
+          }}
           items={[
             {
-              key: '1',
+              key: "/",
               icon: <UserOutlined />,
-              label: 'Home',
+              label: "Home",
             },
             {
-              key: '2',
+              key: "/teachers",
               icon: <VideoCameraOutlined />,
-              label: 'Teachers',
+              label: "Teachers",
             },
             {
-              key: '3',
+              key: "/students",
               icon: <UploadOutlined />,
-              label: 'Students',
+              label: "Students",
             },
             {
-              key: '4',
+              key: "/profile",
               icon: <UploadOutlined />,
-              label: 'Profile',
+              label: "Profile",
+            },
+            {
+              key: "logout",
+              icon: <UploadOutlined />,
+              label: "Logout",
             },
           ]}
         />
@@ -59,7 +74,7 @@ const Sidebar = () => {
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)}
             style={{
-              fontSize: '16px',
+              fontSize: "16px",
               width: 64,
               height: 64,
             }}
@@ -67,14 +82,15 @@ const Sidebar = () => {
         </Header>
         <Content
           style={{
-            margin: '24px 16px',
+            margin: "24px 16px",
             padding: 24,
             minHeight: 280,
+            height: "100vh",
             background: colorBgContainer,
             borderRadius: borderRadiusLG,
           }}
         >
-
+          <Contents />
         </Content>
       </Layout>
     </Layout>
