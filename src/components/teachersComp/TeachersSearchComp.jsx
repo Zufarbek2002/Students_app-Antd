@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { PlusOutlined } from "@ant-design/icons";
 import { Button, Input, Select } from "antd";
 const { Search } = Input;
 
@@ -101,7 +102,7 @@ const TeachersSearchComp = ({ addOpenModal, setFiltered, data }) => {
           },
         ]}
       />
-      <Button size="large" style={{ width: "15%" }} onClick={addOpenModal}>
+      <Button size="large" style={{ width: "15%" }} onClick={addOpenModal} icon={<PlusOutlined />}>
         ADD
       </Button>
     </div>

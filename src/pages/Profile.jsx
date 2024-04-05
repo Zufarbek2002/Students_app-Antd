@@ -1,6 +1,7 @@
 import { Button, Typography } from "antd";
 import { useAuth } from "../components/Auth";
 import { useNavigate } from "react-router-dom";
+import { LogoutOutlined } from "@ant-design/icons";
 const { Title } = Typography;
 
 const Profile = () => {
@@ -21,7 +22,7 @@ const Profile = () => {
           <Title level={4}>Username: {user.username}</Title>
           <Title level={4}>Password: {user.password}</Title>
       </div>
-      <Button onClick={handleLogout} danger>Logout</Button>
+      <Button onClick={handleLogout} danger  icon={<LogoutOutlined />}>Logout</Button>
     </>
   );
 };

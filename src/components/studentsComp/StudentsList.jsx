@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { Button, Space, Table } from "antd";
 import axios from "axios";
 
@@ -11,7 +12,7 @@ const StudentsList = ({ setFiltered, filtered, handleEdit }) => {
   };
   const columns = [
     {
-      title: "#",
+      title: "Id",
       dataIndex: "id",
       key: "id",
     },
@@ -35,8 +36,8 @@ const StudentsList = ({ setFiltered, filtered, handleEdit }) => {
       key: "action",
       render: (_, record) => (
         <Space size="middle">
-          <Button type="primary" size="large" onClick={()=>handleEdit(record.id)}>Edit</Button>
-          <Button type="primary" size="large" danger onClick={()=>handleDelete(record.id)}>Delete</Button>
+          <Button type="primary" size="large" icon={<EditOutlined />} onClick={()=>handleEdit(record.id)}>Edit</Button>
+          <Button type="primary" size="large" icon={<DeleteOutlined />} danger onClick={()=>handleDelete(record.id)}>Delete</Button>
         </Space>
       ),
     },

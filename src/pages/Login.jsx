@@ -1,4 +1,4 @@
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
+import { LockOutlined, LoginOutlined, UserOutlined } from "@ant-design/icons";
 import { Avatar, Button, Checkbox, Form, Input, Space } from "antd";
 import { useAuth } from "../components/Auth";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -81,6 +81,7 @@ const Login = () => {
               className="login-form-button"
               style={{ width: "100%" }}
               size="large"
+              icon={<LoginOutlined />}
             >
               Log in
             </Button>

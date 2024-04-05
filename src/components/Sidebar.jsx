@@ -1,10 +1,11 @@
 import { useState } from "react";
 import {
+  HomeOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UploadOutlined,
+  ReadOutlined,
+  TeamOutlined,
   UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, Button, theme } from "antd";
 import { useNavigate } from "react-router-dom";
@@ -39,22 +40,22 @@ const Sidebar = () => {
             items={[
               {
                 key: "/",
-                icon: <UserOutlined />,
+                icon: <HomeOutlined />,
                 label: "Home",
               },
               {
                 key: "/teachers",
-                icon: <VideoCameraOutlined />,
+                icon: <ReadOutlined />,
                 label: "Teachers",
               },
               {
                 key: "/students",
-                icon: <UploadOutlined />,
+                icon: <TeamOutlined />,
                 label: "Students",
               },
               {
                 key: "/profile",
-                icon: <UploadOutlined />,
+                icon: <UserOutlined />,
                 label: "Profile",
               },
             ]}
