@@ -1,11 +1,18 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import Login from "./pages/Login";
+import { AuthProvider } from "./components/Auth";
 
 const App = () => {
   return (
     <div>
       <Router>
-        <Sidebar />
+        <AuthProvider>
+          <Sidebar />
+          <Routes>
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </AuthProvider>
       </Router>
     </div>
   );

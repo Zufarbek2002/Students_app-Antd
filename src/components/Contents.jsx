@@ -1,16 +1,13 @@
 import Home from "../pages/Home";
-import { AuthProvider } from "./Auth";
 import { Route, Routes } from "react-router-dom";
 import RequireAuth from "./RequireAuth";
 import Teachers from "../pages/Teachers";
 import Students from "../pages/Students";
-import Login from "../pages/Login";
 import Profile from "../pages/Profile";
 
 const Contents = () => {
   return (
     <div>
-      <AuthProvider>
         <Routes>
           <Route
             path="/"
@@ -36,7 +33,6 @@ const Contents = () => {
               </RequireAuth>
             }
           />
-          <Route path="/login" element={<Login />} />
           <Route
             path="/profile"
             element={
@@ -46,7 +42,6 @@ const Contents = () => {
             }
           />
         </Routes>
-      </AuthProvider>
     </div>
   );
 };
